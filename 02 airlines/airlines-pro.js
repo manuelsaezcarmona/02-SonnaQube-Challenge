@@ -30,8 +30,6 @@ do {
 } while (!username);
 alert("Bienvenido a airlines " + username);
 
-//airLines();
-
 do {
   usertype = prompt("¿Eres Administrador (ADMIN) o Usuario (USER)", "USER");
   if (usertype) {
