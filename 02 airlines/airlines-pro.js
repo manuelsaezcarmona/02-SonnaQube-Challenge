@@ -129,13 +129,12 @@ function chooseFlights() {
 /** -------    FUNCIONES   --------------------------- */
 
 function airLines() {
-  for (let i = 0; i < flights.length; i++) {
-    console.log(`El vuelo con origen: ${flights[i].from} y destino ${
-      flights[i].to
-    } 
-        tiene un coste de ${flights[i].cost} y ${isScale(flights[i].scale)}
+  for (let vuelo of flights) {
+    console.log(`El vuelo con origen: ${flights[i].from} y destino ${vuelo.to} 
+        tiene un coste de ${vuelo.cost} y ${isScale(vuelo.scale)}
         `);
   }
+
   console.log("El coste medio es: " + averageCost(flights).toFixed(2));
 
   let flightsWithScale = flights.filter((flight) => flight.scale === true);
