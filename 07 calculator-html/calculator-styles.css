@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "nunito-regular";
+    src: url(Nunito-Regular.ttf);
+}
+body{
+    background:  rgba(34,193,195,1) 0%;
+}
+.container{
+    font-family: "nunito-regular", Arial, Helvetica, sans-serif;
+    padding: 1.5%;
+    min-height: 100vh;
+}
+
+header{
+    text-align: center;
+    background: linear-gradient(45deg, rgba(63,94,251,1) 30%, rgba(70,184,252,0.8071603641456583) 100%);
+    color: #ffffff;
+}
+main{
+    margin: 1% 1%;
+}
+
+#calculator{
+    background-color: darkgrey;
+    width: 50%;
+    margin: auto;
+}
+
+#cabecera{
+    background-color: black;
+    color:white;
+    text-align: end;
+    padding-right: 1%;
+}
+
+#previous {
+    font-size: calc(0.5em + 2vw);
+}
+
+#current {
+    font-size: calc(0.5em + 3vw);
+}
+#calculator > #botonera{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    background: cornsilk;
+    text-align: center;
+    font-size: 1.5rem;
+    border: darkgray 1px solid;
+}
+
+#botonera > .number, #botonera > .operator , #botonera > .action{
+    border: darkgray 1px solid;
+}
+
+#botonera > .operator{
+    background-color: darkorange;
+}
+#botonera > #AC , #botonera > div:nth-child(16){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+footer{
+    background-color: darkorange;
+    text-align: center;
+}
+
